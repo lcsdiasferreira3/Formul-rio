@@ -1,0 +1,171 @@
+<html>
+<head>
+<meta charset="UTF"-8>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="form.js"></script>
+<title>Formulário Sic</title>
+</head>
+<body>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b><div class="paragrafo100"> Formulário de solicitação de informação (Pessoa Física)</b></div> <div class="SIC">SIC</div> <div id="complementoSIC"><b>Serviço de <br>Informações <br>ao Cidadão</b></div> 
+<div class="cima4"></div>
+
+<br><br>
+
+<div class="cima2">As informações abaixo são obrigatórias</div>
+
+
+<div id="form">
+				<form action="">
+				<div id="paragrafo30"><b>Nome:</b> <input type="text" required="yes" name="text"  size="89" pattern="[a-z\s]+$"/><br></div>
+				
+				
+				
+				<div id="paragrafo31"><b>CPF:</b>&emsp;<input type="text" name="cpf" maxlength="11" onblur="return verificarCPF(this.value)"/>
+				<br></div> 
+				<br>
+				 <div id="paragrafo32">Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar órgão emissor e UF):</div><br>
+				<br>
+				<div id="paragrafo33"><b>Tipo do documento:</b> <input type="text" name="tipo do documento" value="" size="25"  required="yes" pattern="[a-z\s]+$" /> &emsp;<b>Nº:</b>&emsp;<input type="text" name="numbers" size="25" pattern="[0-9]+$"/></div>
+				
+				<div id="paragrafo34"><b>Endereco eletronico (e-mail):</b><input type="email" name="email" size="69"><br></div>
+				
+				&emsp;&emsp;<div id="paragrafo35"><b>ou</b></div>
+				<br>
+				<div id="paragrafo36"><b>Endereco físico (Rua,n°,complemento,bairro):</b><br><input type="text" name="endereco fisico" size="96" required="yes"  ></div><br>
+				
+				<div id="paragrafo37"><b>Cidade:</b> <input type="text" name="cidade" value="" size="40" required="yes" pattern="[a-z\s]+$" > &emsp;<input type="button" id="bntCarregar" onclick="ano()" value="Estados" />
+				
+				<select name="uf" id="uf">
+				<option value=""><b>Selecionar</b></option>
+	<option value="AC">Acre</option>
+	<option value="AL">Alagoas</option>
+	<option value="AM">Amazonas</option>
+	<option value="AP">Amapá</option>
+	<option value="BA">Bahia</option>
+	<option value="CE">Ceará</option>
+	<option value="DF">Distrito Federal</option>
+	<option value="ES">Espírito Santo</option>
+	<option value="GO">Goiás</option>
+	<option value="MA">Maranhão</option>
+	<option value="MG">Minas Gerais</option>
+	<option value="MS">Mato Grosso do Sul</option>
+	<option value="MT">Mato Gross</option>
+	<option value="PA">Pará</option>
+	<option value="PB">Paraíba</option>
+	<option value="PE">Pernambuco<0/option>
+	<option value="PI">Piauí</option>
+	<option value="PR">Paraná</option>
+	<option value="RJ">Rio de Janeiro</option>
+	<option value="RN">Rio Grande do Norte</option>
+	<option value="RS">Rio Grande do Sul</option>
+	<option value="RO">Rondônia</option>
+	<option value="RR">Roraima</option>
+	<option value="SC">Santa Catarina</option>
+	<option value="SE">Sergipe</option>
+	<option value="SP">São Paulo</option>
+	<option value="TO">Tocantins</option>
+				</select>
+				
+				&emsp;<b>UF:</b> <input type="text" name="UF" value="" size="1" required="yes" pattern="[a-z\s]+$" ><br></div>
+				
+				<div id="paragrafo40">&emsp;<b>Cep:&emsp;&#160;</b> <input type="text" name="Cep" value="" size="15" required="yes" pattern="[0-9]+$" >
+				&emsp;<b>País:</b> <input type="text" name="País" value="" size="60" required="yes" pattern="[a-z\s]+$" ><br><br></div>
+				
+				
+				
+				
+				</div>
+				<br>
+				<div class="cima3">Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços </div>
+
+				<div id="form2">
+				
+				
+				
+				<div id="paragrafo3"><b>Sexo:</b>&#160;&#160;
+				<input type="radio" name="sexo" value="masculino">&emsp;Masculino 	<input type="radio" name="sexo" value="feminino">&emsp;Feminino 
+				&emsp;&#160;&#160;<b>Data de nascimento:</b>&#160;&#160;<input type="date" name="data_aniversario"> <br></div>
+				<br>
+				
+				
+				<div id="paragrafo4"><b>Escolaridade:</b></div>
+				<br><br>
+				<div id="paragrafo7">&nbsp;<input type="radio" name="ensino" value="Sem instrução formal">&#160;&#160;Sem instrução formal  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#160;<input type="radio" name="ensino" value="Ensino superior">&#160;&#160;Ensino superior &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="ensino" value="Ensino fundamental">&#160;&#160;Doutorado </div>
+				
+				
+				<div id="paragrafo8"><br>&nbsp;<input type="radio" name="ensino" value="Ensino fundamental">&#160;&#160;Ensino fundamental &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ensino" value="Especialização">&#160;&#160;Especilização
+				</div>
+				
+				
+				
+				
+				
+				
+				<br><BR><div id="paragrafo9"><input type="radio" name="ensino" value="Ensino Médio">&#160;&#160;Ensino Médio	&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ensino" value="Mestrado">&#160;&#160;Mestrado<br></div>
+				<BR><br>
+				
+				
+				
+				<div id="paragrafo4"><b>Ocupação principal / Profissão</b>
+				<br><br></div>
+				 <div id="paragrafo10">&#160;<input type="radio" name="ocupaçao" value="Empregado - setor privado ">&#160;&#160;Empregado - setor privado
+				&emsp;&emsp;&#160;<input type="radio" name="ocupaçao" value="Pesquisador">&#160;&#160;Pesquisador
+				&emsp;&emsp;&emsp;&emsp;&emsp;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Servidor público estadual">&#160;&#160;Servidor público estadual </div>
+				
+				
+				<div id="paragrafo11"><br><br>&#160;<input type="radio" name="ocupaçao" value="Jornalista">&#160;&#160;Jornalista
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Professor">&#160;&#160;Professor
+				&emsp;&emsp;&emsp;&emsp;&emsp;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Servidor público municipal">&#160;&#160;Servidor público municipal</div>
+				
+				
+				<br><br><div id="paragrafo12"><input type="radio" name="ocupaçao" value="Membro de partido político">&#160;&#160;Membro de partido político
+				&emsp;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Estudante">&#160;&#160;Estudante
+				&emsp;&emsp;&emsp;&emsp;&emsp;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Membro de ONG nacional">&#160;&#160;Membro de ONG nacional</div>
+				
+				
+				<br><br><div id="paragrafo13"><input type="radio" name="ocupaçao" value="Representante de sindicato">&#160;&#160;Representante de sindicato
+				&emsp;&emsp;&#160;<input type="radio" name="ocupaçao" value="Empresário/empreendedor">&#160;&#160;Empresário/empreendedor
+				&#160;&#160;<input type="radio" name="ocupaçao" value="Membro de ONG internacional">&#160;&#160;Membro de ONG internacional</div>
+				
+				<br><br><div id="paragrafo14"><input type="radio" name="ocupaçao" value="Profis. Liberal/autônomo">&#160;&#160;Profis. Liberal/autônomo
+				&emsp;&emsp;&#160;&#160;&#160;&#160;<input type="radio" name="ocupaçao" value="Servidor público federal">&#160;&#160;Servidor público federal</div>
+
+				<br><br><div id="paragrafo15"><input type="radio" name="ocupaçao" value="Outras">&#160;&#160;Outras</div>
+				
+				<br><br><div id="paragrafo16"><b>Telefone:&emsp;</b>(<input type="tel" required="yes" size="1" maxlength="3" name="phone" pattern="[0-9]{2}">)<input type="tel" required="required" size="20" maxlength="15" name="phone" pattern="\([0-9]{2}\)"></div>
+				
+				
+				
+				
+				</div>
+				
+				<br>
+				<div class="cima3"> Especificação do pedido de acesso à informação</div>
+				
+				<div id="form3">
+				<form action="">
+				<br>
+				<div id="paragrafo17"><b>Órgão/Entidade destinatário do pedido:</b><br><br></div>
+				<div id="paragrafo18"><input type="text" required="yes" name="texto" size="90" pattern="[a-z\s]+$" >
+				<br><br></div>
+				<div id="paragrafo19"><b>Forma preferencial de recebimento da resposta</b>
+				<br><br></div>
+				<div id="paragrafo20"><input type="radio" name="recebimento" value="Buscar/Consultar pessoalmente">&#160;&#160;Buscar/Consultar pessoalmente
+				&emsp;&#160;&#160;<input type="radio" name="recebimento" value="E-mail">&#160;&#160;E-mail
+				&emsp;&emsp;<input type="radio" name="recebimento" value="Por carta (com custo)">&#160;&#160;Por carta (com custo)</div>
+				<br><br>
+				
+				 <div id="paragrafo21"><b>Especificação do pedido:</b></div>
+				 <br><br><div id="paragrafo22"><textarea name="menssagem" rows="13" cols="98"  ></textarea></div>
+				 <div id="paragrafoenviar"><input type="submit" value="Enviar"></div>
+				</form>
+				
+				</div>
+				
+				
+
+
+
+
+</body>
+<html>
